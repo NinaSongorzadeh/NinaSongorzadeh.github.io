@@ -1,6 +1,6 @@
 cv-en-toekomstplan
 curriculum-vitae
-mijn-toekomstplan
-mijn-ambities
-mijn-huidige-vaardigheden
-vaardigheden-die-ik-wil-ontwikkelen
+career-aspirations-and-professional-development
+my-career-aspirations
+my-current-skills-and-experience
+skills-i-want-to-develop
