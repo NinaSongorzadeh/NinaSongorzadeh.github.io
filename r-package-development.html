@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 R Package Development | Data Science for Biology Portfolio</title>
+  <meta name="description" content="6 R Package Development | Data Science for Biology Portfolio" />
+  <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6 R Package Development | Data Science for Biology Portfolio" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6 R Package Development | Data Science for Biology Portfolio" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="database-management-and-sql.html"/>
+<link rel="next" href="scientific-writing-and-referencing.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="cv-en-toekomstplan.html"><a href="cv-en-toekomstplan.html"><i class="fa fa-check"></i><b>1</b> CV en toekomstplan</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="cv-en-toekomstplan.html"><a href="cv-en-toekomstplan.html#curriculum-vitae"><i class="fa fa-check"></i><b>1.1</b> Curriculum Vitae</a></li>
+<li class="chapter" data-level="1.2" data-path="cv-en-toekomstplan.html"><a href="cv-en-toekomstplan.html#career-aspirations-and-professional-development"><i class="fa fa-check"></i><b>1.2</b> Career Aspirations and Professional Development</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="cv-en-toekomstplan.html"><a href="cv-en-toekomstplan.html#my-career-aspirations"><i class="fa fa-check"></i><b>1.2.1</b> My Career Aspirations</a></li>
+<li class="chapter" data-level="1.2.2" data-path="cv-en-toekomstplan.html"><a href="cv-en-toekomstplan.html#my-current-skills-and-experience"><i class="fa fa-check"></i><b>1.2.2</b> My Current Skills and Experience</a></li>
+<li class="chapter" data-level="1.2.3" data-path="cv-en-toekomstplan.html"><a href="cv-en-toekomstplan.html#skills-i-want-to-develop"><i class="fa fa-check"></i><b>1.2.3</b> Skills I Want to Develop</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html"><i class="fa fa-check"></i><b>2</b> Interactive Data Visualization with R Shiny</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#project-overview"><i class="fa fa-check"></i><b>2.1</b> Project Overview</a></li>
+<li class="chapter" data-level="2.2" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#why-i-chose-this-skill"><i class="fa fa-check"></i><b>2.2</b> Why I Chose This Skill</a></li>
+<li class="chapter" data-level="2.3" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#learning-objectives"><i class="fa fa-check"></i><b>2.3</b> Learning Objectives</a></li>
+<li class="chapter" data-level="2.4" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#learning-plan"><i class="fa fa-check"></i><b>2.4</b> Learning Plan</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#learning-resources"><i class="fa fa-check"></i><b>2.4.1</b> Learning Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#demonstrating-my-learning"><i class="fa fa-check"></i><b>2.5</b> Demonstrating My Learning</a></li>
+<li class="chapter" data-level="2.6" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#dashboard-development"><i class="fa fa-check"></i><b>2.6</b> Dashboard Development</a></li>
+<li class="chapter" data-level="2.7" data-path="interactive-data-visualization-with-r-shiny.html"><a href="interactive-data-visualization-with-r-shiny.html#results-and-reflection"><i class="fa fa-check"></i><b>2.7</b> Results and Reflection</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="research-data-management.html"><a href="research-data-management.html"><i class="fa fa-check"></i><b>3</b> Research Data Management</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="research-data-management.html"><a href="research-data-management.html#organizing-rna-seq-research-data"><i class="fa fa-check"></i><b>3.1</b> Organizing RNA-seq Research Data</a></li>
+<li class="chapter" data-level="3.2" data-path="research-data-management.html"><a href="research-data-management.html#managing-my-portfolio-repository"><i class="fa fa-check"></i><b>3.2</b> Managing My Portfolio Repository</a></li>
+<li class="chapter" data-level="3.3" data-path="research-data-management.html"><a href="research-data-management.html#documentation-and-reflection"><i class="fa fa-check"></i><b>3.3</b> Documentation and Reflection</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="reproducible-research.html"><a href="reproducible-research.html"><i class="fa fa-check"></i><b>4</b> Reproducible Research</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="reproducible-research.html"><a href="reproducible-research.html#reproducing-a-biological-data-analysis"><i class="fa fa-check"></i><b>4.1</b> Reproducing a Biological Data Analysis</a></li>
+<li class="chapter" data-level="4.2" data-path="reproducible-research.html"><a href="reproducible-research.html#assessing-scientific-reproducibility"><i class="fa fa-check"></i><b>4.2</b> Assessing Scientific Reproducibility</a></li>
+<li class="chapter" data-level="4.3" data-path="reproducible-research.html"><a href="reproducible-research.html#results-and-reflection-1"><i class="fa fa-check"></i><b>4.3</b> Results and Reflection</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="database-management-and-sql.html"><a href="database-management-and-sql.html"><i class="fa fa-check"></i><b>5</b> Database Management and SQL</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="database-management-and-sql.html"><a href="database-management-and-sql.html#working-with-relational-databases"><i class="fa fa-check"></i><b>5.1</b> Working with Relational Databases</a></li>
+<li class="chapter" data-level="5.2" data-path="database-management-and-sql.html"><a href="database-management-and-sql.html#data-integration-and-sql-queries"><i class="fa fa-check"></i><b>5.2</b> Data Integration and SQL Queries</a></li>
+<li class="chapter" data-level="5.3" data-path="database-management-and-sql.html"><a href="database-management-and-sql.html#results-and-reflection-2"><i class="fa fa-check"></i><b>5.3</b> Results and Reflection</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="r-package-development.html"><a href="r-package-development.html"><i class="fa fa-check"></i><b>6</b> R Package Development</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="r-package-development.html"><a href="r-package-development.html#package-overview"><i class="fa fa-check"></i><b>6.1</b> Package Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="r-package-development.html"><a href="r-package-development.html#functions-and-documentation"><i class="fa fa-check"></i><b>6.2</b> Functions and Documentation</a></li>
+<li class="chapter" data-level="6.3" data-path="r-package-development.html"><a href="r-package-development.html#installation-and-usage"><i class="fa fa-check"></i><b>6.3</b> Installation and Usage</a></li>
+<li class="chapter" data-level="6.4" data-path="r-package-development.html"><a href="r-package-development.html#results-and-reflection-3"><i class="fa fa-check"></i><b>6.4</b> Results and Reflection</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="scientific-writing-and-referencing.html"><a href="scientific-writing-and-referencing.html"><i class="fa fa-check"></i><b>7</b> Scientific Writing and Referencing</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="scientific-writing-and-referencing.html"><a href="scientific-writing-and-referencing.html#research-background"><i class="fa fa-check"></i><b>7.1</b> Research Background</a></li>
+<li class="chapter" data-level="7.2" data-path="scientific-writing-and-referencing.html"><a href="scientific-writing-and-referencing.html#literature-and-citations"><i class="fa fa-check"></i><b>7.2</b> Literature and Citations</a></li>
+<li class="chapter" data-level="7.3" data-path="scientific-writing-and-referencing.html"><a href="scientific-writing-and-referencing.html#references"><i class="fa fa-check"></i><b>7.3</b> References</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="automated-research-reporting.html"><a href="automated-research-reporting.html"><i class="fa fa-check"></i><b>8</b> Automated Research Reporting</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="automated-research-reporting.html"><a href="automated-research-reporting.html#project-overview-1"><i class="fa fa-check"></i><b>8.1</b> Project Overview</a></li>
+<li class="chapter" data-level="8.2" data-path="automated-research-reporting.html"><a href="automated-research-reporting.html#parameterized-r-markdown"><i class="fa fa-check"></i><b>8.2</b> Parameterized R Markdown</a></li>
+<li class="chapter" data-level="8.3" data-path="automated-research-reporting.html"><a href="automated-research-reporting.html#results-and-demonstration"><i class="fa fa-check"></i><b>8.3</b> Results and Demonstration</a></li>
+<li class="chapter" data-level="8.4" data-path="automated-research-reporting.html"><a href="automated-research-reporting.html#reflection"><i class="fa fa-check"></i><b>8.4</b> Reflection</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science for Biology Portfolio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="r-package-development" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> R Package Development<a href="r-package-development.html#r-package-development" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="package-overview" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Package Overview<a href="r-package-development.html#package-overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="functions-and-documentation" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Functions and Documentation<a href="r-package-development.html#functions-and-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="installation-and-usage" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Installation and Usage<a href="r-package-development.html#installation-and-usage" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="results-and-reflection-3" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Results and Reflection<a href="r-package-development.html#results-and-reflection-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>In development.</em></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="database-management-and-sql.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="scientific-writing-and-referencing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
