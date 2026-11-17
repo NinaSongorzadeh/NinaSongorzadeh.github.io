@@ -10,7 +10,7 @@ why-i-chose-this-skill
 learning-objectives
 learning-plan
 learning-resources
-demonstrating-my-learning
+demonstrating-my-product
 dashboard-development
 results-and-reflection
 research-data-management
@@ -22,14 +22,11 @@ reproducing-a-biological-data-analysis
 assessing-scientific-reproducibility
 results-and-reflection-1
 database-management-and-sql
-working-with-relational-databases
-data-integration-and-sql-queries
-results-and-reflection-2
 r-package-development
 package-overview
 functions-and-documentation
 installation-and-usage
-results-and-reflection-3
+results-and-reflection-2
 scientific-writing-and-referencing
 research-background
 literature-and-citations
